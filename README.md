@@ -92,33 +92,17 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Train
+Open the notebooks in Jupyter and run the cells in order:
 
 ```bash
-python train.py --data_dir /path/to/EuroSAT --epochs 30 --batch_size 64 --lr 1e-4
-```
-
-### Evaluate
-
-```bash
-python evaluate.py --data_dir /path/to/EuroSAT --checkpoint checkpoints/best_model.pth
-```
-
-### Error Analysis
-
-```bash
-python error_analysis.py --data_dir /path/to/EuroSAT --checkpoint checkpoints/best_model.pth
+jupyter notebook eurosat.ipynb
 ```
 
 ## Project Structure
 
 ```
-├── data/                   # Dataset utilities and custom DataLoader
-├── models/                 # Model definitions and fine-tuning logic
-├── train.py                # Training script
-├── evaluate.py             # Evaluation script
-├── error_analysis.py       # Confusion matrix and misclassification analysis
-├── requirements.txt        # Python dependencies
+├── eurosat.ipynb           # Main notebook: data loading, model training, evaluation, and error analysis
+├── 1.ipynb                 # Exploratory / supplementary notebook
 └── README.md
 ```
 
